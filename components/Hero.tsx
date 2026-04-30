@@ -39,7 +39,6 @@ export default function Hero() {
   const [lines, setLines] = useState<
     { prompt: string; text: string; typed: string; done: boolean }[]
   >([]);
-  const [scrolled, setScrolled] = useState(false);
   const [loaded, setLoaded] = useState(false);
 
   const typeLines = useCallback(
@@ -93,11 +92,6 @@ export default function Hero() {
     };
   }, [typeLines]);
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 100);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   return (
     <section className="min-h-screen flex items-center relative overflow-hidden">
