@@ -1,1 +1,0 @@
-"use strict";exports.id=44,exports.ids=[44],exports.modules={7044:(t,e,s)=>{s.r(e),s.d(e,{default:()=>o});let o=(0,s(8570).createProxy)(String.raw`/Users/abhinaysaikamineni/CascadeProjects/portfolio/components/Contact.tsx#default`)}};

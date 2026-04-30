@@ -110,15 +110,6 @@ export default function Writings() {
             {drafts.map((article, idx) => (
               <ScrollReveal key={article.title} delay={(published.length + idx) * 80}>
                 <div className="relative border-b border-[var(--glass-border)] md:odd:border-r py-6 md:odd:pr-6 md:even:pl-6">
-                  {/* Draft stamp */}
-                  <span
-                    className="absolute top-4 right-4 font-mono text-[10px] text-[var(--fg-muted)] uppercase tracking-widest opacity-40 select-none"
-                    style={{ transform: "rotate(-8deg)" }}
-                    aria-hidden="true"
-                  >
-                    Draft
-                  </span>
-
                   <div className="flex items-baseline gap-3 mb-2">
                     <span className="font-[family-name:var(--font-display)] text-lg text-[var(--fg-muted)] opacity-30 select-none" aria-hidden="true">
                       {String(published.length + idx + 1).padStart(2, "0")}

@@ -65,51 +65,6 @@ export default function About() {
                 ))}
               </div>
 
-              {/* Career timeline spark */}
-              <div className="relative h-16 my-8">
-                <svg
-                  width="100%"
-                  height="64"
-                  viewBox="0 0 800 64"
-                  preserveAspectRatio="none"
-                  className="w-full"
-                >
-                  <line
-                    x1="0"
-                    y1="32"
-                    x2="800"
-                    y2="32"
-                    stroke="var(--glass-border)"
-                    strokeWidth="1"
-                  />
-                  {[
-                    { x: 0, label: "2021" },
-                    { x: 200, label: "2023" },
-                    { x: 400, label: "2024" },
-                    { x: 600, label: "2025" },
-                    { x: 800, label: "Now" },
-                  ].map((point) => (
-                    <g key={point.label}>
-                      <circle
-                        cx={point.x}
-                        cy="32"
-                        r="4"
-                        fill="var(--accent)"
-                      />
-                      <text
-                        x={point.x}
-                        y="56"
-                        fill="var(--fg-muted)"
-                        fontSize="11"
-                        fontFamily="var(--font-mono)"
-                        textAnchor="middle"
-                      >
-                        {point.label}
-                      </text>
-                    </g>
-                  ))}
-                </svg>
-              </div>
             </div>
 
             {/* Right — Stacked info rows */}

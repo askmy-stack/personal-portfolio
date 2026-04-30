@@ -54,7 +54,7 @@ const projectVisuals: Record<string, { bg: string; iconPath: string; iconColor: 
   "eeg-seizure-detection": {
     bg: "from-emerald-500/8 via-teal-500/5 to-transparent",
     iconColor: "text-emerald-400/50",
-    label: "Signal Processing · ML Classification",
+    label: "EEG · Multi-Model Benchmarking",
     iconPath: `M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z`,
   },
 };
@@ -164,7 +164,11 @@ function ProjectCard({ project, index }: { project: (typeof projects)[number]; i
               </Link>
             )}
             <a
-              href={`https://github.com/askmy-stack/${project.slug}`}
+              href={
+                project.slug === "eeg-seizure-detection"
+                  ? "https://github.com/askmy-stack/spring-2026-group2"
+                  : `https://github.com/askmy-stack/${project.slug}`
+              }
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-[var(--fg-muted)] hover:text-[var(--fg)] transition-colors inline-flex items-center gap-1"

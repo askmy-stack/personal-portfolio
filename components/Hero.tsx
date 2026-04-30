@@ -125,24 +125,6 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-center">
           {/* Left column */}
           <div>
-            {/* Availability pill */}
-            <div
-              className="inline-flex items-center gap-2.5 mb-8"
-              style={{
-                opacity: loaded ? 1 : 0,
-                transform: loaded ? "translateY(0)" : "translateY(12px)",
-                transition: "opacity 0.4s ease 0.1s, transform 0.4s ease 0.1s",
-              }}
-            >
-              <span
-                className="w-1.5 h-1.5 rounded-full bg-[var(--accent)]"
-                style={{ animation: "pulse 2s ease-in-out infinite" }}
-              />
-              <span className="font-mono text-xs text-[var(--fg-muted)] tracking-widest uppercase">
-                Available — May 2026
-              </span>
-            </div>
-
             {/* Hero name */}
             <div
               style={{
@@ -312,25 +294,6 @@ export default function Hero() {
             </a>
           </div>
         </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div
-        className={`absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 transition-opacity duration-500 ${
-          scrolled ? "opacity-0" : "opacity-100"
-        }`}
-        style={{
-          opacity: loaded ? (scrolled ? 0 : 1) : 0,
-          transition: "opacity 0.4s ease 1.6s",
-        }}
-      >
-        <div className="w-px h-8 bg-[var(--accent)] opacity-40" />
-        <span
-          className="font-mono text-[9px] text-[var(--fg-muted)] tracking-[0.3em] uppercase"
-          style={{ writingMode: "horizontal-tb" }}
-        >
-          scroll
-        </span>
       </div>
     </section>
   );

@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/abhinaysaikamineni/CascadeProjects/portfolio/app/layout":["static/media/fa3e259cafa8f47e-s.p.woff2","static/media/26d0ba92e140f0dc-s.p.woff2","static/media/558ca1a6aa3cb55e-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';

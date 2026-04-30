@@ -61,7 +61,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${dmSerifDisplay.variable} ${instrumentSans.variable} ${jetbrainsMono.variable}`}
     >
-      <head>
+      <body className="font-[family-name:var(--font-heading)] bg-[var(--bg)] text-[var(--fg)] antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -99,8 +99,6 @@ export default function RootLayout({
             }),
           }}
         />
-      </head>
-      <body className="font-[family-name:var(--font-heading)] bg-[var(--bg)] text-[var(--fg)] antialiased">
         <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem={false}>
           <NoiseTexture />
           <CustomCursor />
